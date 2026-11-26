@@ -1,0 +1,21 @@
+# 1. Crear la carpeta y entrar
+mkdir practica-git-final
+cd practica-git-final
+
+# 2. Iniciar Git y FORZAR que la rama se llame 'main'
+git init
+git branch -M main
+
+# 3. Crear el README y el .gitignore (como pide el enunciado)
+echo "# Práctica Git Final" > README.md
+echo "node_modules/" > .gitignore
+
+# 4. Primer commit
+git add README.md .gitignore
+git commit -m "chore: inicializa repositorio con readme y gitignore"
+
+# 5. Conectar con GitHub (pega tu URL)
+git remote add origin <PEGA_TU_URL_AQUI>
+
+# 6. Subir la rama main
+git push -u origin main
